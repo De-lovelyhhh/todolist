@@ -1,0 +1,32 @@
+
+
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="任务名称（必填）" bindinput='nameIn'/>
+                </view>
+            </view>
+        </view>
+        
+
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <textarea class="weui-textarea" placeholder="任务内容（选填）" style="height: 3.3em"  bindinput='contentIn'/>
+                </view>
+            </view>
+
+        </view>
+        <view class="weui-btn-area ">
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{label}}" >
+                <button class="btn" type="default">任务标签</button>
+            </picker>
+        </view>
+
+       <view class="button-sp-area">
+            <button class="btn" type="primary" bindtap='addsure'>确定</button>
+            
+        </view>

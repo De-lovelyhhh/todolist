@@ -1,0 +1,32 @@
+<view class="page">
+    
+    <view class="page__bd">
+        <view class="weui-cells weui-cells_after-title">
+            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="font">{{time}}</view>
+            </navigator>
+            <view  class="weui-cell weui-cell_access" hover-class="weui-cell_active"  wx:for="{{taskName}}" wx:key="{{index}}" data-index="{{ index }}" bindtap='goto' wx:if="{{item.done==1}}">
+              
+                <view class="weui-cell__bd">{{item.massage}}</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access" ></view>
+              
+            </view>
+           
+           
+           <button class="weui-btn" type="primary"  plain="true"  bindtap="btn">{{showView?'显示历史任务':'隐藏历史任务'}}</button>
+            <view hover-class="weui-cell_active"  wx:for="{{taskName}}" wx:key="{{index}}" data-index="{{ index }}" bindtap='goto' wx:if="{{item.done==2}}" class="weui-cell weui-cell_access {{showView?'hide':'show'}}">
+              
+                <view class="weui-cell__bd">{{item.massage}}</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access" ></view>
+              
+            </view>
+        
+            
+            <navigator url="../grade/grade?num2={{num}}" >
+                <view >
+                   <image class="add_icon" src="../../i/add.png"></image>
+                 </view>
+            </navigator>
+        </view>
+    </view>
+</view>

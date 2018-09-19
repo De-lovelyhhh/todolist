@@ -1,0 +1,24 @@
+/*!
+ * WeUI v1.1.1 (https://github.com/weui/weui-wxss)
+ * Copyright 2017 Tencent, Inc.
+ * Licensed under the MIT license
+ */
+.font{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.hide{
+display: none;
+}
+.show{
+display: block;
+}
+.add_icon{
+  position: fixed;
+  width:42px;
+  height:42px;
+  bottom: 30px;
+  right: 20px;
+} 
